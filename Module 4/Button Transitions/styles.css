@@ -1,0 +1,47 @@
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn{
+    position: absolute;
+    padding: .5rem;
+    background-color: hsl(204, 71%, 62%);; 
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+}
+
+.hide-btn{
+    position: absolute;
+    top: 45%;
+    opacity: 40%;
+    transition: opacity 1.5s;
+    transition-duration: 2.5s;
+}
+
+.hide-btn:hover{
+    opacity: 100%;
+}
+
+.hide-btn:focus{
+    opacity: 0%;
+}
+
+.change-btn{
+    position: absolute;
+    top: 55%;
+    transition: all 1s ease-in-out;
+}
+
+.change-btn:focus{
+    background-color: red;
+    color: black;
+}

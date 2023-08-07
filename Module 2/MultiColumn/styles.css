@@ -1,0 +1,14 @@
+body{
+    margin: 0;
+
+}
+
+.parent{
+    height: 100vh;
+    column-width: 150px;
+    column-rule: 20px solid black;
+    column-gap: 40px;
+    column-count: 3;
+    column-fill: auto;
+}
+

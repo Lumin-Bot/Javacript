@@ -1,0 +1,59 @@
+*::after, *::before, *{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn{
+    position: relative;
+    color: white;
+    background-color: hsl(200, 100%, 50%);
+    outline: none;
+    border: none;
+    padding: .5em 1em;
+    border-radius: .3em;
+}
+
+.btn:focus::after{
+    position: absolute;
+    top: 200%;
+    transform-origin: center;
+    left: 0;
+    bottom: 0;
+    content: "Loading...";
+    color: black;
+    animation: loading 4s linear .5s forwards;
+
+
+}
+
+@keyframes loading {
+    0%{ 
+    
+    }
+
+    25%{
+        rotate: -45deg;
+        content: "25%";
+    }
+
+    50%{
+        rotate: 45deg;
+        content: "50%";
+    }
+
+    75%{
+        rotate: -45deg;
+        content: "75%";
+    }
+
+    100%{
+        content: "Loaded";
+    }
+}

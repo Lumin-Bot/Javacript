@@ -1,0 +1,25 @@
+body{
+    margin: 0;
+}
+
+.box{
+    width: 500px;
+    height: 500px;
+    background-color: red;
+}
+
+.box::before{
+    display: block;
+    content: attr(data-text);
+    width: 250px;
+    height: 250px;
+    background-color: lightgreen;
+}
+
+.box::after{
+    display: block;
+    content: "";
+    width: 250px;
+    height: 250px;
+    background-color: lightcoral;
+}

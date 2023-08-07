@@ -1,0 +1,174 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+
+}
+
+.body{
+    display: flex;
+}
+
+.grid-container{
+    display: grid;
+    min-width: 100vw;
+    max-height: 100vh;
+    grid-template-columns: repeat(9, 100px);
+    grid-template-rows: repeat(4, 100px);
+    grid-gap:2px;
+    background-color: #2C2C2C;
+/*     grid-template-areas: 
+        "img1 img2 img3 img4 img4 img5 img6 img7 img8"
+        "img1 img2 img9 img9 img10 img11 img12 img12 img13"
+        "img14 img15 img12 img12 img 16 img16 img12 img12 img17"
+        "img18 img19 img20 img2 img2 img2 img2 img2 img2 "
+    ; */
+    
+}
+
+.img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    border: 1px solid #777;
+}
+
+.img1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.img2{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+
+.img4{
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.img8{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.img12{
+    grid-column-start: 7;
+    grid-column-end: 9;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.img16{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.img15{
+    grid-column-start: 5;
+    grid-column-end: 7;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+
+
+
+
+
+ 
+/*  .img1{
+    grid-area: img1;
+}
+
+.img2{
+    grid-area: img2;
+}
+
+.img3{
+    grid-area: img3;
+}
+
+.img4{
+    grid-area: img4;
+}
+
+.img5{
+    grid-area: img5;
+}
+
+.img6{
+    grid-area: img6;
+}
+
+.img7{
+    grid-area: img7;
+}
+
+.img8{
+    grid-area: img8;
+}
+
+.img9{
+    grid-area: img9;
+}
+
+.img10{
+    grid-area: img10;
+}
+
+.img11{
+    grid-area: img11;
+}
+
+.img12{
+    grid-area: img12;
+}
+
+.img13{
+    grid-area: img13;
+}
+
+.img14{
+    grid-area: img14;
+}
+
+.img15{
+    grid-area: img15;
+}
+
+.img16{
+    grid-area: img16;
+}
+
+.img17{
+    grid-area: img17;
+}
+
+.img18{
+    grid-area: img18;
+}
+
+.img19{
+    grid-area: img19;
+}
+
+.img20{
+    grid-area: img20;
+}
+ */

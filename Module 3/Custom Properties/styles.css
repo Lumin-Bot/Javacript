@@ -1,0 +1,17 @@
+:root{
+    --primary-color: blue;
+    --margin: 0;
+}
+
+h2{
+    --margin: 10px;
+    margin: var(--margin);
+    background-color: var(--primary-color);
+    color: white;
+    padding: .5rem;
+}
+
+p{
+    margin: var(--margin);
+    color: var(--primary-color);
+}

@@ -1,0 +1,11 @@
+p:not(.red):not(.green){
+    background-color: blue;
+}
+
+input[type="text"]{
+    background-color: aqua;
+}
+
+input:not(:checked){
+    margin: 50px;
+}

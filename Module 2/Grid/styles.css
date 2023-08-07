@@ -1,0 +1,26 @@
+.item{
+    border: 1px solid #333;
+    background-color: #777;
+    color: yellow;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 50px 100px;
+}
+
+.item1{
+}
+
+.item2{
+
+}
+
+.item3{
+
+}
+
+.item6{
+
+}
